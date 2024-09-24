@@ -1,0 +1,74 @@
+/* Make the background black */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+/* Hide scrollbar and make it super thin */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: green; /* Color of the scrollbar */
+    border-radius: 10px;
+}
+
+/* Hacker-style lines container */
+.hacker-lines-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200vh; /* Tall enough to allow scrolling */
+}
+
+/* Style for the moving lines */
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: green;
+    margin: 5px 0;
+    position: relative;
+    animation: move-line 4s linear infinite;
+}
+
+/* Animation keyframes */
+@keyframes move-line {
+    0% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+}
+
+/* Create a moving circle along the line */
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    animation: move-circle 4s linear infinite;
+}
+
+@keyframes move-circle {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
