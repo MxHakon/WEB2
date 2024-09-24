@@ -8,8 +8,8 @@ canvas.height = window.innerHeight;
 
 // Store all points and lines data
 let points = [];
-const numPoints = 50;  // Reduced number of points
-const maxDistance = 150;  // Reduced max distance for lines
+const numPoints = 100;
+const maxDistance = 150;
 
 // Randomize between blue and white for the lines
 function getRandomColor() {
@@ -35,7 +35,7 @@ for (let i = 0; i < numPoints; i++) {
 // Draw the circles at connecting points
 function drawCircle(x, y) {
     ctx.beginPath();
-    ctx.arc(x, y, 1.5, 0, 2 * Math.PI);  // Reduced circle radius
+    ctx.arc(x, y, 3, 0, 2 * Math.PI);
     ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
     ctx.fill();
 }
@@ -46,7 +46,7 @@ function drawLine(point1, point2) {
     ctx.moveTo(point1.x, point1.y);
     ctx.lineTo(point2.x, point2.y);
     ctx.strokeStyle = point1.color;
-    ctx.lineWidth = 0.5;  // Reduced line width
+    ctx.lineWidth = 1;
     ctx.stroke();
 }
 
