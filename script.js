@@ -9,7 +9,7 @@ canvas.height = window.innerHeight;
 // Store all points and lines data
 let points = [];
 const numPoints = 50;  // Reduced number of points
-const maxDistance = 100;  // Reduced max distance for lines
+const maxDistance = 150;  // Reduced max distance for lines
 
 // Randomize between blue and white for the lines
 function getRandomColor() {
