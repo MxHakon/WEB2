@@ -1,14 +1,15 @@
-/* Style for the text box */
-.text-container {
-    background-color: rgb(27, 27, 27); /* Dark gray color */
-    border-radius: 15px; /* Smooth corners */
-    padding: 20px; /* Inner padding */
-    margin: 20px; /* Space around the box */
-    width: 300px; /* Default width; adjust as needed */
-    height: auto; /* Automatic height based on content */
-    color: white; /* Text color for contrast */
-    position: absolute; /* Allows positioning anywhere on the canvas */
-    top: 20px; /* Distance from the top */
-    left: 20px; /* Distance from the left */
-    z-index: 10; /* Ensure it appears above the canvas */
+/* Set full-screen black background */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Style the canvas to cover the full screen */
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
 }
