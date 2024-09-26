@@ -95,3 +95,18 @@ function animate() {
 
 // Start the animation
 animate();
+
+// Select elements for the login functionality
+const loginButton = document.getElementById('loginButton');
+const keyInput = document.getElementById('keyInput');
+
+// Add event listener for the login button
+loginButton.addEventListener('click', function() {
+    const enteredKey = keyInput.value;
+    if (enteredKey === 'mxhakon') {
+        // Redirect to another page
+        window.location.href = 'loggedin.html'; // Adjust the URL to where the logged-in page will be
+    } else {
+        alert('Incorrect Key!'); // Alert user if the key is incorrect
+    }
+});
