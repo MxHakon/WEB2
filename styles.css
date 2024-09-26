@@ -13,3 +13,61 @@ canvas {
     width: 100vw;
     height: 100vh;
 }
+
+/* Login container styles */
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Login heading styles */
+.login-container h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Input field styles */
+.login-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Login button styles */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4CAF50; /* Lighter color for login button */
+    color: white;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #45a049; /* Darker shade for hover effect */
+}
+
+/* Logout button styles */
+.logout-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: red; /* Red color for logout button */
+    color: white;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: darkred; /* Darker shade for hover effect */
+}
