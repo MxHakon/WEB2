@@ -32,22 +32,28 @@ canvas {
     margin-bottom: 20px;
 }
 
+/* Input field container styles */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Input field styles */
 .login-input {
-    width: 100%;
+    flex: 1;
     padding: 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px; /* Change border-radius to 10px */
     background-color: #ddd;
-    margin-bottom: 20px;
+    margin-right: 10px; /* spacing between input and buttons */
 }
 
 /* Login button styles */
 .login-button {
-    width: 100%;
     padding: 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px; /* Change border-radius to 10px */
     background-color: #4CAF50; /* Lighter color for login button */
     color: white;
     cursor: pointer;
@@ -59,10 +65,9 @@ canvas {
 
 /* Logout button styles */
 .logout-button {
-    width: 100%;
     padding: 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px; /* Change border-radius to 10px */
     background-color: red; /* Red color for logout button */
     color: white;
     cursor: pointer;
