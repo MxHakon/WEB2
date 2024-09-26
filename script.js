@@ -101,15 +101,26 @@ const loginButton = document.getElementById('loginButton');
 const keyInput = document.getElementById('keyInput');
 
 // Add event listener for the login button
-loginButton.addEventListener('click', function() {
-    const enteredKey = keyInput.value;
-    if (enteredKey === 'neger') {
-        // Redirect to the original logged in page
-        window.location.href = 'loggedin.html'; // Adjust the URL to the logged-in page
-    } else if (enteredKey === 'Niklas') {
-        // Redirect to the Niklas page
-        window.location.href = 'niklas.html'; // Adjust the URL to the Niklas page
-    } else {
-        alert('Incorrect Key!'); // Alert user if the key is incorrect
-    }
+if (loginButton) {
+    loginButton.addEventListener('click', function() {
+        const enteredKey = keyInput.value;
+        if (enteredKey === 'neger') {
+            // Redirect to the original logged in page
+            window.location.href = 'loggedin.html'; // Adjust the URL to the logged-in page
+        } else if (enteredKey === 'Niklas') {
+            // Redirect to the Niklas page
+            window.location.href = 'niklas.html'; // Adjust the URL to the Niklas page
+        } else {
+            alert('Incorrect Key!'); // Alert user if the key is incorrect
+        }
+    });
+}
+
+// Add event listener for the logout button (on all pages)
+const logoutButton = document.getElementById('logoutButton');
+if (logoutButton) {
+    logoutButton.addEventListener('click', function() {
+        // Redirect back to the main login page
+        window.location.href = 'index.html';
+    });
 });
