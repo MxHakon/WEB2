@@ -1,21 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Logged In</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <canvas id="hackerCanvas"></canvas>
-    <div class="login-container">
-        <h2>Logged In</h2>
-        <div class="input-container">
-            <button class="logout-button" id="logoutButton">Logout</button>
-        </div>
-    </div>
+/* Set full-screen black background */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+/* Style the canvas to cover the full screen */
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Login container styles */
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Login heading styles */
+.login-container h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Input field container styles */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Input field styles */
+.login-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px; /* Change border-radius to 10px */
+    background-color: #ddd;
+    margin-right: 10px; /* spacing between input and buttons */
+}
+
+/* Login button styles */
+.login-button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px; /* Change border-radius to 10px */
+    background-color: #4CAF50; /* Lighter color for login button */
+    color: white;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #45a049; /* Darker shade for hover effect */
+}
+
+/* Logout button styles */
+.logout-button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px; /* Change border-radius to 10px */
+    background-color: red; /* Red color for logout button */
+    color: white;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: darkred; /* Darker shade for hover effect */
+}
