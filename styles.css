@@ -72,7 +72,3 @@ canvas {
     color: white;
     cursor: pointer;
 }
-
-.logout-button:hover {
-    background-color: darkred; /* Darker shade for hover effect */
-}
