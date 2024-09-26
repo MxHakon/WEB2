@@ -121,6 +121,6 @@ const logoutButton = document.getElementById('logoutButton');
 if (logoutButton) {
     logoutButton.addEventListener('click', function() {
         // Redirect back to the main login page
-        window.location.href = 'index.html';
+        window.location.href = 'index.html'; // Ensure this URL points to your main login page
     });
 });
