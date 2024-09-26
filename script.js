@@ -104,8 +104,11 @@ const keyInput = document.getElementById('keyInput');
 loginButton.addEventListener('click', function() {
     const enteredKey = keyInput.value;
     if (enteredKey === 'neger') {
-        // Redirect to another page
-        window.location.href = 'loggedin.html'; // Adjust the URL to where the logged-in page will be
+        // Redirect to the original logged in page
+        window.location.href = 'loggedin.html'; // Adjust the URL to the logged-in page
+    } else if (enteredKey === 'Niklas') {
+        // Redirect to the Niklas page
+        window.location.href = 'niklas.html'; // Adjust the URL to the Niklas page
     } else {
         alert('Incorrect Key!'); // Alert user if the key is incorrect
     }
