@@ -106,7 +106,7 @@ loginButton.addEventListener('click', function() {
     if (enteredKey === 'neger') {
         // Redirect to the original logged in page
         window.location.href = 'loggedin.html'; // Adjust the URL to the logged-in page
-    } else if (enteredKey === 'Niklas') {
+    } else if (enteredKey === 'Diklas') {
         // Redirect to the Niklas page
         window.location.href = 'niklas.html'; // Adjust the URL to the Niklas page
     } else {
