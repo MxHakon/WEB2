@@ -100,13 +100,22 @@ animate();
 const loginButton = document.getElementById('loginButton');
 const keyInput = document.getElementById('keyInput');
 
+// Base64 encoded values for the correct passwords
+const encodedPassword1 = "bmVnZXI=";   // "shh"
+const encodedPassword2 = "RGlrbGFz";   // "shh"
+
 // Add event listener for the login button
 loginButton.addEventListener('click', function() {
     const enteredKey = keyInput.value;
-    if (enteredKey === 'neger') {
+
+    // Decode the passwords
+    const correctKey1 = atob(encodedPassword1);
+    const correctKey2 = atob(encodedPassword2);
+
+    if (enteredKey === correctKey1) {
         // Redirect to the original logged in page
         window.location.href = 'loggedin.html'; // Adjust the URL to the logged-in page
-    } else if (enteredKey === 'Diklas') {
+    } else if (enteredKey === correctKey2) {
         // Redirect to the Niklas page
         window.location.href = 'niklas.html'; // Adjust the URL to the Niklas page
     } else {
