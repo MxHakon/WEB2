@@ -102,7 +102,7 @@ const keyInput = document.getElementById('keyInput');
 
 // Base64 encoded values for the correct passwords
 const encodedPassword1 = "bmVnZXI=";   // "shh"
-const encodedPassword2 = "RGlrbGFz";   // "shh"
+const encodedPassword2 = "UGlrbGFz";   // "shh"
 
 // Add event listener for the login button
 loginButton.addEventListener('click', function() {
